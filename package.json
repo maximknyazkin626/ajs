@@ -2,8 +2,11 @@
   "name": "@maximknyazkin626/ajs",
   "version": "1.0.0",
   "main": "dist/index.js",
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,13 @@
     "url": "https://github.com/maximknyazkin626/ajs/issues"
   },
   "homepage": "https://github.com/maximknyazkin626/ajs#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@babel/cli": "^7.27.2",
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "babel-loader": "^10.0.0",
+    "webpack": "^5.99.8",
+    "webpack-cli": "^6.0.1"
+  }
 }
